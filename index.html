@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loading...</title>
+
+<script>
+function startPrank() {
+
+    // sound play
+    let audio = new Audio("https://www.soundjay.com/button/beep-07.wav");
+    audio.play();
+
+    // flashing text
+    let text = document.getElementById("text");
+    setInterval(() => {
+        text.style.color = text.style.color === "red" ? "lime" : "red";
+    }, 200);
+
+}
+</script>
+
+</head>
+
+<body onload="startPrank()" style="background:black;display:flex;justify-content:center;align-items:center;height:100vh;">
+
+<h1 id="text" style="font-size:50px;font-weight:bold;">
+vikram gaandu
+</h1>
+
+</body>
+</html>
