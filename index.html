@@ -1,3 +1,4 @@
+HTML
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,23 +7,24 @@
 <script>
 function startPrank() {
 
-    // sound play
     let audio = new Audio("https://www.soundjay.com/button/beep-07.wav");
     audio.play();
 
-    // flashing text
     let text = document.getElementById("text");
     setInterval(() => {
         text.style.color = text.style.color === "red" ? "lime" : "red";
     }, 200);
-
 }
 </script>
 
 </head>
 
-<body onload="startPrank()" style="background:black;display:flex;justify-content:center;align-items:center;height:100vh;">
+<body onload="startPrank()" style="background:black;display:flex;flex-direction:column;justify-content:center;align-items:center;height:100vh;">
 
+<!-- IMAGE -->
+<img src="./photo.jpg" style="width:250px;border-radius:10px;margin-bottom:20px;">
+
+<!-- TEXT -->
 <h1 id="text" style="font-size:80px;font-weight:bold;">
 YD vikram gaandu
 </h1>
